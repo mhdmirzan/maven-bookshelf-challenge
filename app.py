@@ -53,6 +53,8 @@ col3.metric("⭐ Avg Rating", f"{books_df['avg_rating'].mean():.2f}")
 col4.metric("🗣 Total Reviews", f"{reviews_df.shape[0]:,}")
 st.markdown("---")
 
+st.image("dashboard_screenshot.png", caption="📊 Interactive Dashboard Preview", use_column_width=True)
+
 # Recommendation
 st.header("🔍 Search for Similar Books")
 book_input = st.text_input("Enter a book title (e.g. 'Congo')", "")
